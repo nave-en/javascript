@@ -1,0 +1,19 @@
+<html>
+<body>
+<button onclick="hello()">Try it</button>
+<p id="result"></p>
+<script>
+function hello() {
+  var person = prompt("Please enter your name:");
+  var t;
+  if (person == null || person == "") {
+    t = "you click cancel";
+  } else {
+    t = "Hello " + person;
+  }
+  document.getElementById("result").innerHTML = t;
+}
+</script>
+
+</body>
+</html>

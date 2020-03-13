@@ -1,0 +1,19 @@
+<html>
+<body>
+	<h2>multi arrow function</h2>
+	<input type="text" name="age" onchange="good()">
+	<p id="result">
+	</p>
+	<script>
+		let=good=()=>{
+			var result;
+			var a=Number(document.getElementsByName("age")[0].value);
+			if(a>=18)
+			result="you are eligible for vote";
+		    else
+		    result="soon you will be eligible for vote";
+		document.getElementById("result").innerHTML=result;
+		};
+	</script>
+</body>
+</html>

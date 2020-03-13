@@ -1,0 +1,21 @@
+<html>
+<body>
+<h2>For Loop</h2>
+<p id="demo"></p>
+<h2>for in Loop</h2>
+<p id="result"></p>
+<script>
+var ipl = ["csk", "mi", "kkr", "dc"];
+var i=0, l=ipl.length, text="";
+for (; i < l; i++){
+  text += ipl[i] + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+var csk={captain:"captain:Dhoni",vicecaptain:"vice captain:Raina",Trophy:"ipltrophy:3"};
+var x,h="";
+for(x in csk)
+	h+=csk[x]+"<br>";
+document.getElementById("result").innerHTML = h;
+</script>
+</body>
+</html>

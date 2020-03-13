@@ -1,0 +1,17 @@
+<html>
+<body>
+	<p id="ans"></p>
+	<p id="result"></p>
+	<script>
+		var t=this;
+		document.getElementById("ans").innerHTML=t;
+		var team={name:"India",captain:"Virat",vicecaptain:"Rohit",hello:function(){
+			return this.name+"<br>"+this.captain+"<br>"+this.vicecaptain;
+		}}
+		document.getElementById("result").innerHTML=team.hello();
+	</script>
+	<p>this refers to its object,In "use strict" mode in java script this refers to undefined</p>
+	<p>click me for today date</p>
+	<button type="button" onclick="this.innerHTML=new Date()">click for today date</button>
+</body>
+</html>

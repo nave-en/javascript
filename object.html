@@ -1,0 +1,11 @@
+<html>
+<body>
+	<p id="result"></p>
+	<script>
+		var team={name:"India",captain:"Virat",vicecaptain:"Rohit",hello:function(){
+			return team.name+"<br>"+team.captain+"<br>"+team.vicecaptain;
+		}}
+		document.getElementById("result").innerHTML=team.hello();
+	</script>
+</body>
+</html>

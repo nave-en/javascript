@@ -1,0 +1,20 @@
+<html>
+<head>
+<script>
+function comparision() {
+	var x=10;var y="10";
+	if(x == y)
+      document.getElementById("de").innerHTML = "both value same";
+    if( x === y)
+  	  document.getElementById("te").innerHTML = "both value and type same";
+  	else
+  		document.getElementById("te").innerHTML = "value only same";
+}
+</script>
+</head>
+<body>
+<p id="de"></p>
+<p id="te"></p>
+<button type="button" onclick="comparision()">result</button>
+</body>
+</html> 
